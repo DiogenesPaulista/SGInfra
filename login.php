@@ -5,9 +5,9 @@ $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
 // Configurações do Active Directory
-$ldap_host = "ldap://seu_dominio.com.br"; // ou IP do AD
-$ldap_dn = "DC=seu_dominio,DC=com,DC=br";
-$ldap_user = $usuario . "@seu_dominio.com.br"; // login@dominio
+$ldap_host = "ldap://10.31.5.5"; // ou IP do AD
+$ldap_dn = "OU=Infra,OU=TI,OU=BHZ,OU=MG,DC=educacao,DC=elv,DC=intranet";
+$ldap_user = $usuario . "@educacao.elv.intranet"; // login@dominio
 
 $ldap_con = ldap_connect($ldap_host);
 ldap_set_option($ldap_con, LDAP_OPT_PROTOCOL_VERSION, 3);
