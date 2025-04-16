@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db = "servico";
+$db = "";
 $user = "root";
 $pass = "";
 
